@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="big5"></meta>
-    <title>新書資訊網</title>
+    <title>?s?Ѹ???/title>
     <style type="text/css">
     .head {
         background-color: #003344;
@@ -29,7 +29,7 @@
         margin-right: auto;
         text-align: left;
         font-size: 24px;
-        font-family: 微軟正黑體;
+        font-family: ?L?n?????
     }
     
     .tagcontent-menu {
@@ -38,7 +38,7 @@
         margin-right: auto;
         text-align: left;
         font-size: 24px;
-        font-family: 微軟正黑體;
+        font-family: ?L?n?????
         left: 0;
         top: 56.4;
         position: fixed;
@@ -58,7 +58,7 @@
         top: 60;
     }
     
-    .searchinforbox {
+    .rightbox {
         width: 300px;
         padding: 10px;
         margin: 10px;
@@ -66,10 +66,36 @@
         display: inline-block;
         vertical-align: top;
         text-align: center;
-        height: 600px;
+        height: 400px;
         line-height: 30px;
         position: relative;
         top: 60;
+    }
+    .searchbox {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #eeeeee;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        height: 120px;
+        line-height: 30px;
+        position: relative;
+        top: 30;
+    }
+    .inforbox {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #eeeeee;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        height: 400px;
+        line-height: 30px;
+        position: relative;
+        top: 40;
     }
     
     .widebox {
@@ -84,6 +110,19 @@
         line-height: 30px;
         position: relative;
         top: 60;
+    }
+    .doyouknowbox {
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #eeeeee;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        height: 400px;
+        line-height: 30px;
+        position: relative;
+        top: -50;
     }
     
     .tagbox {
@@ -146,10 +185,10 @@
     
     .title {
         font-size: 20px;
-        font-family: 微軟正黑體;
+        font-family: ?L?n?????
     }
     
-    <!--標籤CSS--> .vertical-menu {
+    <!--???SS--> .vertical-menu {
         width: 400px;
         /* Set a width if you like */
     }
@@ -382,18 +421,39 @@ function changeImg() {
 }
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function() {
+    $("#a1").hide();
+    	$("#q1").click(function(){
+      	$("#a1").fadeIn("fast");;
+    	});
+     $("#a2").hide();
+    	$("#q2").click(function(){
+      	$("#a2").fadeIn("fast");;
+    	});
+     $("#a3").hide();
+    	$("#q3").click(function(){
+      	$("#a3").fadeIn("fast");;
+    });
+    });
+</script>
+
+
 <body style="margin:0px;background-color:#eeeeee;" onload="currentSlide(1),setTimeout('changeImg()', 5000)">
-    <div class="head">新書資訊網</div>
-    <!--旁標籤-->
+    <div class="head">?s?Ѹ???/div>
+    <!--?Ǽ??->
     <div class="content">
         <div class="tagbox">
             <div class="tagcontent-menu">
                 <div class="vertical-menu">
-                    <a href="#" class="active">網路書店</a>
-                    <a href="http://www.books.com.tw/">博客來</a>
-                    <a href="https://www.kadokawa.com.tw/">台灣角川</a>
-                    <a href="http://www.kingstone.com.tw/about/about_102.asp">金石堂</a>
-                    <a href="https://www.tenlong.com.tw/?gclid=CNiY8qPXitQCFRIEKgodtnsBsQ">天瓏</a>
+                    <a href="#" class="active">???ѩ?</a>
+                    <a href="http://www.books.com.tw/">?իȨ?/a>
+                    <a href="https://www.kadokawa.com.tw/">?x????t</a>
+                    <a href="http://www.kingstone.com.tw/about/about_102.asp">???۰?/a>
+                    <a href="https://www.tenlong.com.tw/?gclid=CNiY8qPXitQCFRIEKgodtnsBsQ">??n</a>
                 </div>
             </div>
         </div>
@@ -424,33 +484,36 @@ function changeImg() {
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <div class="searchinforbox">
-            <div class="title">書籍搜尋</div>
+        <div class="rightbox">
+          <div class="searchbox">
+            <div class="title">??y?j?M</div>
             <form action="test.php" method="post">
-                書名：
+                ?ѦW?G
                 <input type="text" name="BookName">
-                <br>書商：
+                <br>?ѰӡG
                 <select name="BookStore">
                 
-                    <option value="books">博客來</option>
+                    <option value="books">?իȨ?/option>
                 
-                    <option value="kadokawa">台灣角川</option>
+                    <option value="kadokawa">?x????t</option>
                 
-                    <option value="kingstone">金石堂</option>
+                    <option value="kingstone">???۰?/option>
                 
-                    <option value="tenlong">天瓏</option>
+                    <option value="tenlong">??n</option>
                 </select>
                 <br>
-                <input type="submit" value="查詢">
+                <input type="submit" value="?d??>
             </form>
-            <div class="title">書展資訊</div>
+          </div>
+            <div class="inforbox">
+            <div class="title">?Ѯi??</div>
             <div class="newsbox">
                 <div class="news_smallbox">
                     <div style="font-size:20px;color:white;">2017</div>
                     <div style="font-size:20px;color:white;">Jul, 6</div>
                 </div>
                 <div class="news_widebox">
-                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61996&ctNode=1676&mp=1">「慕山手札」青少年主題書展</a></div>
+                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61996&ctNode=1676&mp=1">?u?}?s?⥾?v?C?֦~?D??Ѯi</a></div>
                 </div>
             </div>
             <div class="newsbox">
@@ -459,7 +522,7 @@ function changeImg() {
                     <div style="font-size:20px;color:white;">Jul, 6</div>
                 </div>
                 <div class="news_widebox">
-                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61995&ctNode=1676&mp=1">「戀海日記」主題書展</a></div>
+                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61995&ctNode=1676&mp=1">?u??????v?D??Ѯi</a></div>
                 </div>
             </div>
             <div class="newsbox">
@@ -468,7 +531,7 @@ function changeImg() {
                     <div style="font-size:20px;color:white;">May, 2</div>
                 </div>
                 <div class="news_widebox">
-                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61833&ctNode=1676&mp=1">「上古石板」青少年主題書展</a></div>
+                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61833&ctNode=1676&mp=1">?u?W?j?۪O?v?C?֦~?D??Ѯi</a></div>
                 </div>
             </div>
             <div class="newsbox">
@@ -477,19 +540,39 @@ function changeImg() {
                     <div style="font-size:20px;color:white;">May, 2</div>
                 </div>
                 <div class="news_widebox">
-                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61609&ctNode=1676&mp=1">「摒住呼吸!驚賞臺灣國家公園之美」主題書展</a></div>
+                    <div style="font-size:20px;color:white;"><a href="http://www.ntl.edu.tw/ct.asp?xItem=61609&ctNode=1676&mp=1">?u????I?l!?????????餧???v?D??Ѯi</a></div>
                 </div>
             </div>
+            </div>
+	    <div class="doyouknowbox">
+                <div class="title" style="text-align: center;">?A???D??</div>
+	        <br>
+
+	        <div style="cursor: pointer;" id="q1">?A???D?b?饻???????֦??R???a?쪺????--?????A?O???F???????????ҳ]?ߪ???????</div>
+	        <div style="color:red;" id="a1">???s????</div>
+	        <br>
+
+	        <div style="cursor: pointer;" id="q2">?A???D?????W?Ĥ@?g???g?ب????A?O?????ѩO?</div>
+	        <div style="color:red;" id="a2">???L?~?v</div>
+                <br>
+            
+	        <div style="cursor: pointer;" id="q3">?A???D???????@?q???x??????A½?禨?s??@?????W???g?p??--??l?A?O?X?ۭ?????@?a?????</div>
+	        <div style="color:red;" id="a3">?ե??i</div>
+                <br>
         </div>
+        </div>
+
+
+
         <div class="box">
             <div class="tagcontent">
                 <div class="dropdown">
-                    <button class="dropbtn">網路書店</button>
+                    <button class="dropbtn">???ѩ?</button>
                     <div class="dropdown-content">
-                        <a href="http://www.books.com.tw/">博客來</a>
-                        <a href="https://www.kadokawa.com.tw/">台灣角川</a>
-                        <a href="http://www.kingstone.com.tw/about/about_102.asp">金石堂</a>
-                        <a href="https://www.tenlong.com.tw/?gclid=CNiY8qPXitQCFRIEKgodtnsBsQ">天瓏</a>
+                        <a href="http://www.books.com.tw/">?իȨ?/a>
+                        <a href="https://www.kadokawa.com.tw/">?x????t</a>
+                        <a href="http://www.kingstone.com.tw/about/about_102.asp">???۰?/a>
+                        <a href="https://www.tenlong.com.tw/?gclid=CNiY8qPXitQCFRIEKgodtnsBsQ">??n</a>
                     </div>
                 </div>
             </div>
